@@ -1,21 +1,17 @@
-let 이름 :string = 'kim';
-let 나이 :number = 50;
-// let 결혼했니 :boolean = true;
-// let 결혼했니 :null = null;
-let 결혼했니 :undefined = undefined;
+let 회원 :(number | string) = 'kim';
+let 회원들 :(number | string)[] = [1, '2', 3];
+let 오브젝트 :{ a : (string | number) } = { a : 123 };
 
-let 회원들 :string[] = ['kim', 'park'];
-let 회원들2 :{ member1: string, member2: string } = { member1: 'kim', member2: 'park' }; 
-let 회원들3 :number[] = [1, 2, 3];
+// let 이름 :any;
+// 이름 = 123;
+// 이름 = [];
 
-let myName :string = '정민서';
-let myAge :number = 25;
-let myArea :string = '광명';
+let 이름 :unknown;
+// 이름 - 1;
+// 이름 = 123;
+// 이름 = {};
 
-let myFavorite :{ song: string, singer: string } =  { song: "호무라", singer: "Lisa" };
+// let 변수1 :string = 이름;
 
-let project :{ member :string[], days :number, started :boolean } = {
-    member: ['kim', 'park'],
-    days: 30,
-    started: true
-};
+let 나이 :string | number;
+// 나이 + 1;

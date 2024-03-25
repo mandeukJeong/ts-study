@@ -1,17 +1,13 @@
-var 이름 = 'kim';
-var 나이 = 50;
-// let 결혼했니 :boolean = true;
-// let 결혼했니 :null = null;
-var 결혼했니 = undefined;
-var 회원들 = ['kim', 'park'];
-var 회원들2 = { member1: 'kim', member2: 'park' };
-var 회원들3 = [1, 2, 3];
-var myName = '정민서';
-var myAge = 25;
-var myArea = '광명';
-var myFavorite = { song: "호무라", singer: "Lisa" };
-var project = {
-    member: ['kim', 'park'],
-    days: 30,
-    started: true
-};
+var 회원 = 'kim';
+var 회원들 = [1, '2', 3];
+var 오브젝트 = { a: 123 };
+// let 이름 :any;
+// 이름 = 123;
+// 이름 = [];
+var 이름;
+// 이름 - 1;
+// 이름 = 123;
+// 이름 = {};
+// let 변수1 :string = 이름;
+var 나이;
+// 나이 + 1;
