@@ -1,9 +1,27 @@
-function 내함수(x :number|string) {
-    let array :number[] = [];
-    if (typeof x === "number") {
-        array[0] = x;
-    }
-    // array[0] = x as number;
-}   
+function cleaning (array :(number|string)[]) :number[]{
+    return array.map((item) => {
+        if (typeof item === "string") {
+            return Number(item);
+        } else {
+            return item;
+        }
+    });
+}
 
-내함수(123);
+console.log(cleaning(['1', 2, '3']));
+
+let 철수쌤 = { subject: 'math' };
+let 영희쌤 = { subject: ['science', 'english'] };
+let 민수쌤 = { subject: ['science', 'art', 'korean'] };
+
+function checkSubject(teacher :{subject: string|string[]}) :string {
+    if (typeof teacher.subject === 'string') {
+        return teacher.subject;
+    } else {
+        return teacher.subject[teacher.subject.length - 1];
+    }
+}
+
+console.log(checkSubject(철수쌤));
+console.log(checkSubject(영희쌤));
+console.log(checkSubject(민수쌤));
