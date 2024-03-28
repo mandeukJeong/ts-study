@@ -21,3 +21,7 @@ type PositionY = { y : number };
 type NewType = PositionX & PositionY;
 
 let position :NewType = { x: 10, y: 20 };
+
+type ColorType = { color? : string, size : number, readonly position : number[] };
+
+type CheckType = { name : string, phone : number, email : string, isAdult : boolean };
