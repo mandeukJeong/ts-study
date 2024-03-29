@@ -7,13 +7,18 @@ if (제목?.innerHTML != undefined) {
     제목.innerHTML = '반가워요';
 }
 
-let 링크 = document.querySelector('.link');
+let 링크 = document.querySelectorAll('.naver');
 
-if (링크 instanceof HTMLAnchorElement) {
-    링크.href = 'https://kakao.com';
-}
+링크.forEach((a) => {
+    if (a instanceof HTMLAnchorElement) {
+        a.href = 'https://kakao.com';
+    }
+})
 
 let 버튼 = document.querySelector("#button");
+let image = document.querySelector("#image");
 버튼?.addEventListener('click', function() {
-    
+    if (image instanceof HTMLImageElement) {
+        image.src = 'new.jpg';
+    }
 });
