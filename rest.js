@@ -32,3 +32,26 @@ function destructuring(_a) {
     console.log(student, age);
 }
 destructuring(object);
+function findMaxNumber() {
+    var num = [];
+    for (var _i = 0; _i < arguments.length; _i++) {
+        num[_i] = arguments[_i];
+    }
+    var max = 0;
+    for (var i = 0; i < num.length; i++) {
+        if (num[i] > max) {
+            max = num[i];
+        }
+    }
+    return max;
+}
+function parameter(_a) {
+    var user = _a.user, comment = _a.comment, admin = _a.admin;
+    console.log(user, comment, admin);
+}
+parameter({ user: 'kim', comment: [3, 5, 4], admin: false });
+function parameter2(_a) {
+    var a = _a[0], b = _a[1], c = _a[2];
+    console.log(a, b, c);
+}
+parameter2([40, 'wine', false]);
